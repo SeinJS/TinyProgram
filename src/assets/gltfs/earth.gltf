@@ -1,0 +1,201 @@
+{
+	"asset": {
+		"generator": "Sein.js Toolkit",
+		"extras": {
+			"exporterVersion" : "0.80"
+		},
+		"version": "2.0"
+	},
+	"accessors": [
+		{
+			"bufferView": 2,
+			"byteOffset": 0,
+			"componentType": 5126,
+			"count": 13079,
+			"max": [ 0.9646193, 1.013322, 1.001206 ],
+			"min": [ -0.9841111, -0.9993602, -0.9926794 ],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 2,
+			"byteOffset": 156948,
+			"componentType": 5126,
+			"count": 13079,
+			"max": [ 0.9994836, 0.9997187, 0.999288 ],
+			"min": [ -0.9970311, -0.9989942, -0.9977579 ],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 1,
+			"byteOffset": 0,
+			"componentType": 5126,
+			"count": 13079,
+			"max": [ 1.018314, 0.9761989 ],
+			"min": [ 0, 0 ],
+			"type": "VEC2"
+		},
+		{
+			"bufferView": 3,
+			"byteOffset": 0,
+			"componentType": 5126,
+			"count": 13079,
+			"max": [ 1, 0.9993215, 0.9997705, 1 ],
+			"min": [ -0.9982672, -0.9999912, -0.9978299, -1 ],
+			"type": "VEC4"
+		},
+		{
+			"bufferView": 0,
+			"byteOffset": 0,
+			"componentType": 5123,
+			"count": 2292,
+			"max": [ 2115 ],
+			"min": [ 0 ],
+			"type": "SCALAR"
+		},
+		{
+			"bufferView": 0,
+			"byteOffset": 4584,
+			"componentType": 5123,
+			"count": 13206,
+			"max": [ 13078 ],
+			"min": [ 2116 ],
+			"type": "SCALAR"
+		}
+	],
+	"buffers": [
+		{
+			"byteLength": 658788,
+			"uri": "earth.bin"
+		}
+	],
+	"bufferViews": [
+		{
+			"buffer": 0,
+			"byteLength": 30996,
+			"target": 34963,
+			"byteOffset": 627792
+		},
+		{
+			"buffer": 0,
+			"byteLength": 104632,
+			"target": 34962,
+			"byteStride": 8,
+			"byteOffset": 0
+		},
+		{
+			"buffer": 0,
+			"byteLength": 313896,
+			"target": 34962,
+			"byteStride": 12,
+			"byteOffset": 104632
+		},
+		{
+			"buffer": 0,
+			"byteLength": 209264,
+			"target": 34962,
+			"byteStride": 16,
+			"byteOffset": 418528
+		}
+	],
+	"extensionsRequired": [
+		"Sein_node",
+		"Sein_physicBody",
+		"Sein_animator",
+		"Sein_customMaterial",
+		"Sein_renderer"
+	],
+	"extensionsUsed": [
+		"Sein_node",
+		"Sein_physicBody",
+		"Sein_animator",
+		"Sein_customMaterial",
+		"Sein_renderer"
+	],
+	"materials": [
+		{
+			"pbrMetallicRoughness": {
+				"baseColorFactor": [0, 0.7529411, 1, 1],
+				"metallicFactor": 0.488,
+				"roughnessFactor": 0.558
+			},
+			"emissiveFactor": [0, 0, 0],
+			"doubleSided": false,
+			"name": "Material_Water"
+		},
+		{
+			"pbrMetallicRoughness": {
+				"baseColorFactor": [0.4943159, 1, 0, 1],
+				"metallicFactor": 0.5,
+				"roughnessFactor": 0
+			},
+			"emissiveFactor": [0, 0, 0],
+			"doubleSided": false,
+			"name": "Material_Earth"
+		}
+	],
+	"meshes": [
+		{
+			"name": "low_poly_earth",
+			"primitives": [
+				{
+					"attributes":{
+						"POSITION": 0,
+						"NORMAL": 1,
+						"TEXCOORD_0": 2,
+						"TANGENT": 3
+					},
+					"indices": 4,
+					"material": 0,
+					"mode": 4
+				},
+				{
+					"attributes":{
+						"POSITION": 0,
+						"NORMAL": 1,
+						"TEXCOORD_0": 2,
+						"TANGENT": 3
+					},
+					"indices": 5,
+					"material": 1,
+					"mode": 4
+				}
+			]
+		}
+	],
+	"nodes": [
+		{
+			"name": "earth",
+			"mesh": 0,
+			"matrix": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]
+,
+			"extensions": {
+				"Sein_node": {
+					"selfType": 2,
+					"childrenType": 1,
+					"className": "EarthActor",
+					"tag": "",
+					"layer": 268435455,
+					"persistent": false,
+					"emitComponentsDestroy": true,
+					"updateOnEverTick": true,
+					"isStatic": false,
+					"skipThisNode": false
+				},
+				"Sein_renderer": {
+					"castShadows": true,
+					"receiveShadows": true,
+					"gammaCorrection": false
+				}
+			}
+		}
+	],
+	"scenes": [
+		{
+			"name":"defaultScene",
+			"nodes": [
+				0
+			]
+		}
+	],
+	"scene": 0
+}

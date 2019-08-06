@@ -1,0 +1,507 @@
+{
+	"asset": {
+		"generator": "Sein.js Toolkit",
+		"extras": {
+			"exporterVersion" : "0.80"
+		},
+		"version": "2.0"
+	},
+	"accessors": [
+		{
+			"bufferView": 1,
+			"byteOffset": 0,
+			"componentType": 5126,
+			"count": 180,
+			"max": [ 1.173636, 0.2243021, 0.9983534 ],
+			"min": [ -1.173636, -0.2251377, -1.234036 ],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 1,
+			"byteOffset": 2160,
+			"componentType": 5126,
+			"count": 180,
+			"max": [ 0.996626, 0.9310966, 0.9235583 ],
+			"min": [ -0.996626, -0.9300354, -0.972137 ],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 2,
+			"byteOffset": 0,
+			"componentType": 5126,
+			"count": 180,
+			"max": [ 1, 0, 0, 1 ],
+			"min": [ 1, 0, 0, 1 ],
+			"type": "VEC4"
+		},
+		{
+			"bufferView": 0,
+			"byteOffset": 0,
+			"componentType": 5123,
+			"count": 240,
+			"max": [ 179 ],
+			"min": [ 0 ],
+			"type": "SCALAR"
+		}
+	],
+	"buffers": [
+		{
+			"byteLength": 7680,
+			"uri": "star.bin"
+		}
+	],
+	"bufferViews": [
+		{
+			"buffer": 0,
+			"byteLength": 480,
+			"target": 34963,
+			"byteOffset": 7200
+		},
+		{
+			"buffer": 0,
+			"byteLength": 4320,
+			"target": 34962,
+			"byteStride": 12,
+			"byteOffset": 0
+		},
+		{
+			"buffer": 0,
+			"byteLength": 2880,
+			"target": 34962,
+			"byteStride": 16,
+			"byteOffset": 4320
+		}
+	],
+	"extensionsRequired": [
+		"Sein_node",
+		"Sein_physicBody",
+		"Sein_animator",
+		"Sein_customMaterial",
+		"Sein_renderer"
+	],
+	"extensionsUsed": [
+		"Sein_node",
+		"Sein_physicBody",
+		"Sein_animator",
+		"Sein_customMaterial",
+		"Sein_renderer"
+	],
+	"materials": [
+		{
+			"pbrMetallicRoughness": {
+				"baseColorFactor": [1, 0.8836636, 0, 1],
+				"metallicFactor": 0.582,
+				"roughnessFactor": 0.799
+			},
+			"emissiveFactor": [0, 0, 0],
+			"doubleSided": false,
+			"name": "Blank"
+		}
+	],
+	"meshes": [
+		{
+			"name": "Cube.014",
+			"primitives": [
+				{
+					"attributes":{
+						"POSITION": 0,
+						"NORMAL": 1,
+						"TANGENT": 2
+					},
+					"indices": 3,
+					"material": 0,
+					"mode": 4
+				}
+			]
+		}
+	],
+	"nodes": [
+		{
+			"name": "SoftStar (6)",
+			"mesh": 0,
+			"children": [
+				13
+			],
+			"translation": [ 0.225, -0.242, 0],
+			"scale": [ 0.06, 0.06000003, 0.06000003],
+			"rotation": [-0.7071068, 0, 0, -0.7071068]
+,
+			"extensions": {
+				"Sein_node": {
+					"selfType": 2,
+					"childrenType": 1,
+					"className": "StarActor",
+					"tag": "",
+					"layer": 268435455,
+					"persistent": false,
+					"emitComponentsDestroy": true,
+					"updateOnEverTick": true,
+					"isStatic": false,
+					"skipThisNode": false
+				},
+				"Sein_physicBody": {
+					"mass": 1,
+					"friction": 0,
+					"restitution": 0,
+					"unControl": false,
+					"physicStatic": false,
+					"sleeping": false,
+					"colliders": [
+						{
+							"name": "box0",
+							"type": "BOX",
+							"offset": [-2.384186E-07, -0.000417769, 0.1178413],
+							"size": [2.347272, 0.4494399, 2.23239],
+							"isTrigger": false
+						}
+					]
+				},
+				"Sein_renderer": {
+					"castShadows": true,
+					"receiveShadows": true,
+					"gammaCorrection": false
+				}
+			}
+		},
+		{
+			"name": "SoftStar (1)",
+			"mesh": 0,
+			"children": [
+				10
+			],
+			"translation": [ 0, 0.19, 0],
+			"scale": [ 0.06, 0.06000003, 0.06000003],
+			"rotation": [-0.7071068, 0, 0, -0.7071068]
+,
+			"extensions": {
+				"Sein_node": {
+					"selfType": 2,
+					"childrenType": 1,
+					"className": "StarActor",
+					"tag": "",
+					"layer": 268435455,
+					"persistent": false,
+					"emitComponentsDestroy": true,
+					"updateOnEverTick": true,
+					"isStatic": false,
+					"skipThisNode": false
+				},
+				"Sein_physicBody": {
+					"mass": 1,
+					"friction": 0,
+					"restitution": 0,
+					"unControl": false,
+					"physicStatic": false,
+					"sleeping": false,
+					"colliders": [
+						{
+							"name": "box0",
+							"type": "BOX",
+							"offset": [-2.384186E-07, -0.000417769, 0.1178413],
+							"size": [2.347272, 0.4494399, 2.23239],
+							"isTrigger": false
+						}
+					]
+				},
+				"Sein_renderer": {
+					"castShadows": true,
+					"receiveShadows": true,
+					"gammaCorrection": false
+				}
+			}
+		},
+		{
+			"name": "anchor"
+		},
+		{
+			"name": "SoftStar",
+			"mesh": 0,
+			"children": [
+				7
+			],
+			"translation": [ 0.22, 0, 0],
+			"scale": [ 0.06, 0.06, 0.06],
+			"rotation": [-0.7071068, 0, 0, -0.7071068]
+,
+			"extensions": {
+				"Sein_node": {
+					"selfType": 2,
+					"childrenType": 1,
+					"className": "StarActor",
+					"tag": "",
+					"layer": 268435455,
+					"persistent": false,
+					"emitComponentsDestroy": true,
+					"updateOnEverTick": true,
+					"isStatic": false,
+					"skipThisNode": false
+				},
+				"Sein_physicBody": {
+					"mass": 1,
+					"friction": 0,
+					"restitution": 0,
+					"unControl": false,
+					"physicStatic": false,
+					"sleeping": false,
+					"colliders": [
+						{
+							"name": "box0",
+							"type": "BOX",
+							"offset": [-2.384186E-07, -0.000417769, 0.1178413],
+							"size": [2.347272, 0.4494399, 2.23239],
+							"isTrigger": false
+						}
+					]
+				},
+				"Sein_renderer": {
+					"castShadows": true,
+					"receiveShadows": true,
+					"gammaCorrection": false
+				}
+			}
+		},
+		{
+			"name": "anchor"
+		},
+		{
+			"name": "anchor"
+		},
+		{
+			"name": "star",
+			"children": [
+				3,
+				1,
+				14,
+				8,
+				12,
+				11,
+				0
+			],
+			"matrix": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]
+,
+			"extensions": {
+				"Sein_node": {
+					"selfType": 2,
+					"childrenType": 1,
+					"className": "",
+					"tag": "",
+					"layer": 268435455,
+					"persistent": false,
+					"emitComponentsDestroy": true,
+					"updateOnEverTick": true,
+					"isStatic": false,
+					"skipThisNode": false
+				}
+			}
+		},
+		{
+			"name": "anchor"
+		},
+		{
+			"name": "SoftStar (3)",
+			"mesh": 0,
+			"children": [
+				9
+			],
+			"translation": [ 0, -0.207, 0],
+			"scale": [ 0.06, 0.06000003, 0.06000003],
+			"rotation": [-0.7071068, 0, 0, -0.7071068]
+,
+			"extensions": {
+				"Sein_node": {
+					"selfType": 2,
+					"childrenType": 1,
+					"className": "StarActor",
+					"tag": "",
+					"layer": 268435455,
+					"persistent": false,
+					"emitComponentsDestroy": true,
+					"updateOnEverTick": true,
+					"isStatic": false,
+					"skipThisNode": false
+				},
+				"Sein_physicBody": {
+					"mass": 1,
+					"friction": 0,
+					"restitution": 0,
+					"unControl": false,
+					"physicStatic": false,
+					"sleeping": false,
+					"colliders": [
+						{
+							"name": "box0",
+							"type": "BOX",
+							"offset": [-2.384186E-07, -0.000417769, 0.1178413],
+							"size": [2.347272, 0.4494399, 2.23239],
+							"isTrigger": false
+						}
+					]
+				},
+				"Sein_renderer": {
+					"castShadows": true,
+					"receiveShadows": true,
+					"gammaCorrection": false
+				}
+			}
+		},
+		{
+			"name": "anchor"
+		},
+		{
+			"name": "anchor"
+		},
+		{
+			"name": "SoftStar (5)",
+			"mesh": 0,
+			"children": [
+				5
+			],
+			"translation": [ -0.251, -0.259, 0],
+			"scale": [ 0.06, 0.06000003, 0.06000003],
+			"rotation": [-0.7071068, 0, 0, -0.7071068]
+,
+			"extensions": {
+				"Sein_node": {
+					"selfType": 2,
+					"childrenType": 1,
+					"className": "StarActor",
+					"tag": "",
+					"layer": 268435455,
+					"persistent": false,
+					"emitComponentsDestroy": true,
+					"updateOnEverTick": true,
+					"isStatic": false,
+					"skipThisNode": false
+				},
+				"Sein_physicBody": {
+					"mass": 1,
+					"friction": 0,
+					"restitution": 0,
+					"unControl": false,
+					"physicStatic": false,
+					"sleeping": false,
+					"colliders": [
+						{
+							"name": "box0",
+							"type": "BOX",
+							"offset": [-2.384186E-07, -0.000417769, 0.1178413],
+							"size": [2.347272, 0.4494399, 2.23239],
+							"isTrigger": false
+						}
+					]
+				},
+				"Sein_renderer": {
+					"castShadows": true,
+					"receiveShadows": true,
+					"gammaCorrection": false
+				}
+			}
+		},
+		{
+			"name": "SoftStar (4)",
+			"mesh": 0,
+			"children": [
+				4
+			],
+			"translation": [ 0, -0.428, 0],
+			"scale": [ 0.06, 0.06000003, 0.06000003],
+			"rotation": [-0.7071068, 0, 0, -0.7071068]
+,
+			"extensions": {
+				"Sein_node": {
+					"selfType": 2,
+					"childrenType": 1,
+					"className": "StarActor",
+					"tag": "",
+					"layer": 268435455,
+					"persistent": false,
+					"emitComponentsDestroy": true,
+					"updateOnEverTick": true,
+					"isStatic": false,
+					"skipThisNode": false
+				},
+				"Sein_physicBody": {
+					"mass": 1,
+					"friction": 0,
+					"restitution": 0,
+					"unControl": false,
+					"physicStatic": false,
+					"sleeping": false,
+					"colliders": [
+						{
+							"name": "box0",
+							"type": "BOX",
+							"offset": [-2.384186E-07, -0.000417769, 0.1178413],
+							"size": [2.347272, 0.4494399, 2.23239],
+							"isTrigger": false
+						}
+					]
+				},
+				"Sein_renderer": {
+					"castShadows": true,
+					"receiveShadows": true,
+					"gammaCorrection": false
+				}
+			}
+		},
+		{
+			"name": "anchor"
+		},
+		{
+			"name": "SoftStar (2)",
+			"mesh": 0,
+			"children": [
+				2
+			],
+			"translation": [ -0.264, 0, 0],
+			"scale": [ 0.06, 0.06000003, 0.06000003],
+			"rotation": [-0.7071068, 0, 0, -0.7071068]
+,
+			"extensions": {
+				"Sein_node": {
+					"selfType": 2,
+					"childrenType": 1,
+					"className": "StarActor",
+					"tag": "",
+					"layer": 268435455,
+					"persistent": false,
+					"emitComponentsDestroy": true,
+					"updateOnEverTick": true,
+					"isStatic": false,
+					"skipThisNode": false
+				},
+				"Sein_physicBody": {
+					"mass": 1,
+					"friction": 0,
+					"restitution": 0,
+					"unControl": false,
+					"physicStatic": false,
+					"sleeping": false,
+					"colliders": [
+						{
+							"name": "box0",
+							"type": "BOX",
+							"offset": [-2.384186E-07, -0.000417769, 0.1178413],
+							"size": [2.347272, 0.4494399, 2.23239],
+							"isTrigger": false
+						}
+					]
+				},
+				"Sein_renderer": {
+					"castShadows": true,
+					"receiveShadows": true,
+					"gammaCorrection": false
+				}
+			}
+		}
+	],
+	"scenes": [
+		{
+			"name":"defaultScene",
+			"nodes": [
+				6
+			]
+		}
+	],
+	"scene": 0
+}

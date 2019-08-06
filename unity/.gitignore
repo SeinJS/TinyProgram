@@ -1,0 +1,9 @@
+*.sln
+*.csproj
+.vs
+Library
+obj
+Packages
+Temp
+Assets/SeinJSUnityToolkit
+Output

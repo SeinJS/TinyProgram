@@ -1,0 +1,231 @@
+{
+	"asset": {
+		"generator": "Sein.js Toolkit",
+		"extras": {
+			"exporterVersion" : "0.80"
+		},
+		"version": "2.0"
+	},
+	"accessors": [
+		{
+			"bufferView": 2,
+			"byteOffset": 0,
+			"componentType": 5126,
+			"count": 724,
+			"max": [ 3.937391, 1.382355, 2.67443 ],
+			"min": [ -3.937591, -0.9726212, -3.066266 ],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 2,
+			"byteOffset": 8688,
+			"componentType": 5126,
+			"count": 724,
+			"max": [ 0.9990432, 0.9999716, 1 ],
+			"min": [ -0.999703, -0.9971874, -0.9919721 ],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 1,
+			"byteOffset": 0,
+			"componentType": 5126,
+			"count": 724,
+			"max": [ 0.9834397, 0.9949934 ],
+			"min": [ 0.004758855, 0.01390392 ],
+			"type": "VEC2"
+		},
+		{
+			"bufferView": 3,
+			"byteOffset": 0,
+			"componentType": 5126,
+			"count": 724,
+			"max": [ 1, 0.9315967, 0.999992, 1 ],
+			"min": [ -1, -0.999731, -1, -1 ],
+			"type": "VEC4"
+		},
+		{
+			"bufferView": 0,
+			"byteOffset": 0,
+			"componentType": 5123,
+			"count": 1080,
+			"max": [ 675 ],
+			"min": [ 0 ],
+			"type": "SCALAR"
+		},
+		{
+			"bufferView": 0,
+			"byteOffset": 2160,
+			"componentType": 5123,
+			"count": 72,
+			"max": [ 723 ],
+			"min": [ 676 ],
+			"type": "SCALAR"
+		}
+	],
+	"buffers": [
+		{
+			"byteLength": 37056,
+			"uri": "spaceship.bin"
+		}
+	],
+	"bufferViews": [
+		{
+			"buffer": 0,
+			"byteLength": 2304,
+			"target": 34963,
+			"byteOffset": 34752
+		},
+		{
+			"buffer": 0,
+			"byteLength": 5792,
+			"target": 34962,
+			"byteStride": 8,
+			"byteOffset": 0
+		},
+		{
+			"buffer": 0,
+			"byteLength": 17376,
+			"target": 34962,
+			"byteStride": 12,
+			"byteOffset": 5792
+		},
+		{
+			"buffer": 0,
+			"byteLength": 11584,
+			"target": 34962,
+			"byteStride": 16,
+			"byteOffset": 23168
+		}
+	],
+	"extensionsRequired": [
+		"Sein_node",
+		"Sein_physicBody",
+		"Sein_animator",
+		"Sein_customMaterial",
+		"Sein_renderer"
+	],
+	"extensionsUsed": [
+		"Sein_node",
+		"Sein_physicBody",
+		"Sein_animator",
+		"Sein_customMaterial",
+		"Sein_renderer"
+	],
+	"images": [
+		{
+			"uri": "misostudiospaceships/textures/prototypezero.jpg"
+		}
+	],
+	"materials": [
+		{
+			"pbrMetallicRoughness": {
+				"baseColorTexture" : {
+					"index" : 0,
+					"texCoord" : 0
+				},
+				"baseColorFactor": [1, 1, 1, 1],
+				"metallicFactor": 0.5,
+				"roughnessFactor": 0
+			},
+			"emissiveFactor": [0, 0, 0],
+			"doubleSided": false,
+			"name": "PrototypeZeroMat"
+		}
+	],
+	"meshes": [
+		{
+			"name": "polySurface19.001",
+			"primitives": [
+				{
+					"attributes":{
+						"POSITION": 0,
+						"NORMAL": 1,
+						"TEXCOORD_0": 2,
+						"TANGENT": 3
+					},
+					"indices": 4,
+					"material": 0,
+					"mode": 4
+				},
+				{
+					"attributes":{
+						"POSITION": 0,
+						"NORMAL": 1,
+						"TEXCOORD_0": 2,
+						"TANGENT": 3
+					},
+					"indices": 5,
+					"material": 0,
+					"mode": 4
+				}
+			]
+		}
+	],
+	"nodes": [
+		{
+			"name": "spaceship",
+			"mesh": 0,
+			"matrix": [-1.192094E-08, -1.421087E-15, -0.1000001, 0, -1.629207E-08, 0.1, 1.421085E-15, 0, 0.1000001, 1.629208E-08, -1.192094E-08, 0, -0.705, 0, 0, 1]
+,
+			"extensions": {
+				"Sein_node": {
+					"selfType": 2,
+					"childrenType": 1,
+					"className": "SpaceshipActor",
+					"tag": "",
+					"layer": 268435455,
+					"persistent": false,
+					"emitComponentsDestroy": true,
+					"updateOnEverTick": true,
+					"isStatic": false,
+					"skipThisNode": false
+				},
+				"Sein_physicBody": {
+					"mass": 1,
+					"friction": 0,
+					"restitution": 0,
+					"unControl": false,
+					"physicStatic": true,
+					"sleeping": false,
+					"colliders": [
+						{
+							"name": "box0",
+							"type": "BOX",
+							"offset": [-9.977818E-05, 0.2048668, 0.1959177],
+							"size": [7.874982, 2.354976, 5.740696],
+							"isTrigger": false
+						}
+					]
+				},
+				"Sein_renderer": {
+					"castShadows": true,
+					"receiveShadows": true,
+					"gammaCorrection": false
+				}
+			}
+		}
+	],
+	"samplers": [
+		{
+			"magFilter": 9729,
+			"minFilter": 9985,
+			"wrapS": 10497,
+			"wrapT": 10497
+		}
+	],
+	"scenes": [
+		{
+			"name":"defaultScene",
+			"nodes": [
+				0
+			]
+		}
+	],
+	"scene": 0,
+	"textures": [
+		{
+			"sampler": 0,
+			"source": 0
+		}
+	]
+}
